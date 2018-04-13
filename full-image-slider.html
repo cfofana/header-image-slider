@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Full Image Slider</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- character encoding -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
+    <!-- Display webpage in edge mode/IE in highest supported document mode -->
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Optimizations for mobile devices -->
+
+    <!-- Google fonts -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 16px;
+        }
+        .wrapper {
+            position: relative;
+        }
+        .arrow {
+            
+        }
+        .arrow-left {
+            
+        }
+        .arrow-right {
+            
+        }
+        #slider {
+            overflow-x: hidden;
+           
+        }
+        .slide {
+             background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .slide1 {
+            background: url('img/freestocks-org-182581.jpg');
+        }
+        .slide2 {
+            background: url('img/hai-phung-406677.jpg');
+        }
+        .slide3 {
+            background: url('img/tony-ross-395570.jpg');
+        }
+        .slide-content {
+            
+        }
+        .slide-content span {
+            
+        }
+    </style>
+
+
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+        <![endif]-->
+</head>
+
+<body>
+ <div class="wrapper">
+     <div id="arrow-left" class="arrow"></div>
+     
+     <div id="slider">
+        <div class="slide slide1">
+         <div class="slide-content"><span>Image One</span></div>
+        </div>
+        
+        <div class="slide slide2">
+         <div class="slide-content"><span>Image Two</span></div>
+        </div>
+        
+        <div class="slide slide3">
+         <div class="slide-content"><span>Image Three</span></div>
+        </div>
+     </div>
+     
+     <div id="arrow-right" class="arrow"></div>
+ </div>
+  
+
+
+    <!-- Jquery first, then JavaScript -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
