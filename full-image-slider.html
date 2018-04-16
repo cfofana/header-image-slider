@@ -31,6 +31,7 @@
         }
         .wrapper {
             position: relative;
+            height: 100%;
         }
         .arrow {
             
@@ -43,7 +44,7 @@
         }
         #slider {
             overflow-x: hidden;
-           
+            height: 100%;
         }
         .slide {
              background-repeat: no-repeat;
@@ -53,13 +54,17 @@
             width: 100%;
         }
         .slide1 {
-            background: url('../img/freestocks-org-182581.jpg');
+            background-image: url('../img/freestocks-org-182581.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
         }
         .slide2 {
-            background: url('../img/hai-phung-406677.jpg');
+            background-image: url('../img/hai-phung-406677.jpg');
         }
         .slide3 {
-            background: url('../img/tony-ross-395570.jpg');
+            background-image: url('../img/tony-ross-395570.jpg');
         }
         .slide-content {
             
@@ -93,6 +98,7 @@
         <div class="slide slide3">
          <div class="slide-content"><span>Image Three</span></div>
         </div>
+        
      </div>
      
      <div id="arrow-right" class="arrow"></div>
