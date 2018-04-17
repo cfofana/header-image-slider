@@ -57,17 +57,43 @@
             background-image: url('../img/freestocks-org-182581.jpg');
         }
         .slide2 {
-            background-image: url('../img/hai-phung-406677.jpg');
+            background-image: url('../img/pexels-photo-458766.jpeg');
             background-position: center 10%;
         }
         .slide3 {
             background-image: url('../img/tony-ross-395570.jpg');
         }
         .slide-content {
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         .slide-content span {
-            
+            font-size: 5rem;
+            color: #fff;
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            position: absolute;
+            top: 50%;
+            margin-top: -35px;
+            cursor: pointer;
+        }
+        #arrow-left {
+            left: 0;
+            margin-left: 30px;
+            border-width: 30px 40px 30px 0;
+            border-color: transparent #fff transparent transparent;
+        }
+        #arrow-right {
+            right: 0;
+            margin-right: 30px;
+            border-width: 30px 0 30px 40px;
+            border-color: transparent transparent transparent #fff;
         }
     </style>
 
@@ -106,6 +132,12 @@
     <!-- Jquery first, then JavaScript -->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        let sliderImages = document.querySelectorAll('.slide');
+        let arrowRight = document.querySelector('#arrow-left');
+        let arrowLeft = document.querySelector('.arrow-right');
+        let current = 0;
+    </script>
 </body>
 
 </html>
